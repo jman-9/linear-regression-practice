@@ -53,9 +53,9 @@ public:
 	linear_system();
 	virtual ~linear_system();
 
-	solution solve(equation eq1, equation eq2);
-	solution_vector solve(equation_matrix problem);
+	solution solve(equation eq1, equation eq2) const;
+	solution_vector solve(equation_matrix problem) const;
 
 protected:
-	equation_vector find_equation(equation_vector e1, equation_vector e2);
+	equation_vector find_equation(equation_vector e1, equation_vector e2) const;
 };

@@ -102,7 +102,7 @@ linear_system::~linear_system()
 {
 }
 
-linear_system::equation_vector linear_system::find_equation(equation_vector e1, equation_vector e2)
+linear_system::equation_vector linear_system::find_equation(equation_vector e1, equation_vector e2) const
 {
 	if(e1[0] != 0.0) calc_div(e1, e1[0]);
 	if(e2[0] != 0.0) calc_div(e2, e2[0]);
@@ -111,7 +111,7 @@ linear_system::equation_vector linear_system::find_equation(equation_vector e1, 
 	return equation_vector(e1.begin()+1, e1.end());
 }
 
-linear_system::solution linear_system::solve(equation eq1, equation eq2)
+linear_system::solution linear_system::solve(equation eq1, equation eq2) const
 {
 	equation xeq1 = eq1, xeq2 = eq2;
 	int xlcm = calc_lcm(xeq1.xc, xeq2.xc);
@@ -135,7 +135,7 @@ linear_system::solution linear_system::solve(equation eq1, equation eq2)
 }
 
 
-linear_system::solution_vector linear_system::solve(equation_matrix problem)
+linear_system::solution_vector linear_system::solve(equation_matrix problem) const
 {
 	solution_vector sol;
 
