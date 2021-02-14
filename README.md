@@ -5,21 +5,18 @@
 - implementing a solution of linear regression problem for C++
 - ...
 
-
 # Needs
 - ~~partial derivative~~
 - ~~system of linear equations~~
 - ~~linear least squares method~~
 - regularization
 - ...
-
-
+  
 # Achieved
 - system of linear equations
 - linear least squares method
 - ...
-
-
+  
 # Usage of linear_system
 ## Code
 ```C++
@@ -99,10 +96,11 @@ solution :
 x=0.000000, y=1.000000 z=-2.000000
 ---------
 ```
-
+  
+  
 # Usage of linear_least_squares
 ## Code
-```
+```C++
 linear_least_squares ls;
 linear_least_squares::residual_list rl(4);
 rl[0] = { .y = 8.7, .x { 0.5 } };
