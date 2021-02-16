@@ -17,6 +17,7 @@ static int calc_lcm(int a, int b){
 
 static void calc_mul(linear_system::equation_vector& eq, double k)
 {
+	(void)calc_mul;
 	for(auto& v : eq)
 		v *= k;
 }
@@ -139,19 +140,17 @@ linear_system::solution_vector linear_system::solve(equation_matrix problem) con
 {
 	solution_vector sol;
 
-	int i, j;
+	size_t i, j;
 
 	while(1)
 	{
 		equation_matrix finder = problem;
-		for(i=(int)finder.varcnt()-1; i>0; i--)
+		for(i=finder.varcnt()-1; i>0; i--)
 		{
 			equation_matrix calc(i, i);
 			for(j=0; j<i; j++)
 			{
 				calc[j] = find_equation(finder[j], finder[j+1]);
-
-				int a = 1;
 			}
 			finder = calc;
 		}

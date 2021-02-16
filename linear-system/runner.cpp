@@ -29,7 +29,7 @@ int main(int argc, char **argv)
 	linear_system::solution_vector s1 = ls.solve(mat);
 	printf("---------\n");
 	printf("problem :\n");
-	for(int i=0; i<mat.varcnt(); i++)
+	for(size_t i=0; i<mat.varcnt(); i++)
 		printf("%dx + %dy + %d = 0\n", (int)mat[i][0], (int)mat[i][1], (int)mat[i][2]);
 	printf("solution :\n");
 	printf("x=%.6lf, y=%.6lf\n", s1[0], s1[1]);
@@ -51,7 +51,7 @@ int main(int argc, char **argv)
 	linear_system::solution_vector s2 = ls.solve(mat);
 	printf("---------\n");
 	printf("problem :\n");
-	for(int i=0; i<mat.varcnt(); i++)
+	for(size_t i=0; i<mat.varcnt(); i++)
 		printf("%dx + %dy + %dz + %d = 0\n", (int)mat[i][0], (int)mat[i][1], (int)mat[i][2], (int)mat[i][3]);
 	printf("solution :\n");
 	printf("x=%.6lf, y=%.6lf z=%.6lf\n", s2[0], s2[1], s2[2]);
