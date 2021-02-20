@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "linear-regression-lib", "libprj\linear-regression-lib.vcxproj", "{2F8846C6-2241-431E-96FF-1555EB93D0DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "items", "items", "{739DAC3C-BE0D-4441-9104-CA6C0C439B5B}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ridge-regression", "test\ridge-regression\ridge-regression.vcxproj", "{9F9A4882-A51A-4925-BB0F-C591459A3757}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "linear-system", "test\linear-system\linearsystem.vcxproj", "{38DF58A9-4D61-446F-8A0C-D9A282874900}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "least-squares", "test\least-squares\leastsquares.vcxproj", "{64BBD487-E971-46FD-80CC-F4E8345F4AD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2B30AC58-8223-4EDD-B816-BBB42D2EABB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F8846C6-2241-431E-96FF-1555EB93D0DD}.Debug|x64.ActiveCfg = Debug|x64
+		{2F8846C6-2241-431E-96FF-1555EB93D0DD}.Debug|x64.Build.0 = Debug|x64
+		{2F8846C6-2241-431E-96FF-1555EB93D0DD}.Debug|x86.ActiveCfg = Debug|Win32
+		{2F8846C6-2241-431E-96FF-1555EB93D0DD}.Debug|x86.Build.0 = Debug|Win32
+		{2F8846C6-2241-431E-96FF-1555EB93D0DD}.Release|x64.ActiveCfg = Release|x64
+		{2F8846C6-2241-431E-96FF-1555EB93D0DD}.Release|x64.Build.0 = Release|x64
+		{2F8846C6-2241-431E-96FF-1555EB93D0DD}.Release|x86.ActiveCfg = Release|Win32
+		{2F8846C6-2241-431E-96FF-1555EB93D0DD}.Release|x86.Build.0 = Release|Win32
+		{9F9A4882-A51A-4925-BB0F-C591459A3757}.Debug|x64.ActiveCfg = Debug|x64
+		{9F9A4882-A51A-4925-BB0F-C591459A3757}.Debug|x64.Build.0 = Debug|x64
+		{9F9A4882-A51A-4925-BB0F-C591459A3757}.Debug|x86.ActiveCfg = Debug|Win32
+		{9F9A4882-A51A-4925-BB0F-C591459A3757}.Debug|x86.Build.0 = Debug|Win32
+		{9F9A4882-A51A-4925-BB0F-C591459A3757}.Release|x64.ActiveCfg = Release|x64
+		{9F9A4882-A51A-4925-BB0F-C591459A3757}.Release|x64.Build.0 = Release|x64
+		{9F9A4882-A51A-4925-BB0F-C591459A3757}.Release|x86.ActiveCfg = Release|Win32
+		{9F9A4882-A51A-4925-BB0F-C591459A3757}.Release|x86.Build.0 = Release|Win32
+		{38DF58A9-4D61-446F-8A0C-D9A282874900}.Debug|x64.ActiveCfg = Debug|x64
+		{38DF58A9-4D61-446F-8A0C-D9A282874900}.Debug|x64.Build.0 = Debug|x64
+		{38DF58A9-4D61-446F-8A0C-D9A282874900}.Debug|x86.ActiveCfg = Debug|Win32
+		{38DF58A9-4D61-446F-8A0C-D9A282874900}.Debug|x86.Build.0 = Debug|Win32
+		{38DF58A9-4D61-446F-8A0C-D9A282874900}.Release|x64.ActiveCfg = Release|x64
+		{38DF58A9-4D61-446F-8A0C-D9A282874900}.Release|x64.Build.0 = Release|x64
+		{38DF58A9-4D61-446F-8A0C-D9A282874900}.Release|x86.ActiveCfg = Release|Win32
+		{38DF58A9-4D61-446F-8A0C-D9A282874900}.Release|x86.Build.0 = Release|Win32
+		{64BBD487-E971-46FD-80CC-F4E8345F4AD6}.Debug|x64.ActiveCfg = Debug|x64
+		{64BBD487-E971-46FD-80CC-F4E8345F4AD6}.Debug|x64.Build.0 = Debug|x64
+		{64BBD487-E971-46FD-80CC-F4E8345F4AD6}.Debug|x86.ActiveCfg = Debug|Win32
+		{64BBD487-E971-46FD-80CC-F4E8345F4AD6}.Debug|x86.Build.0 = Debug|Win32
+		{64BBD487-E971-46FD-80CC-F4E8345F4AD6}.Release|x64.ActiveCfg = Release|x64
+		{64BBD487-E971-46FD-80CC-F4E8345F4AD6}.Release|x64.Build.0 = Release|x64
+		{64BBD487-E971-46FD-80CC-F4E8345F4AD6}.Release|x86.ActiveCfg = Release|Win32
+		{64BBD487-E971-46FD-80CC-F4E8345F4AD6}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9F9A4882-A51A-4925-BB0F-C591459A3757} = {2B30AC58-8223-4EDD-B816-BBB42D2EABB7}
+		{38DF58A9-4D61-446F-8A0C-D9A282874900} = {2B30AC58-8223-4EDD-B816-BBB42D2EABB7}
+		{64BBD487-E971-46FD-80CC-F4E8345F4AD6} = {2B30AC58-8223-4EDD-B816-BBB42D2EABB7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E637F06C-B081-49AD-9CD8-D9EA55AD1B6B}
+	EndGlobalSection
+EndGlobal

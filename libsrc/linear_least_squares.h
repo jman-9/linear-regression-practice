@@ -1,5 +1,5 @@
 #pragma once
-#include "../linear-system/equation_matrix.h"
+#include "equation_matrix.h"
 #include <vector>
 
 

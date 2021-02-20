@@ -3,20 +3,21 @@
 
 # Objectives
 - implementing a solution of linear regression problem for C++
-- ...
+- platform independent
+- reusable
 
 # Needs
 - ~~partial derivative~~
 - ~~system of linear equations~~
 - ~~linear least squares method~~
 - ~~regularization~~
-- ...
   
 # Achieved
 - system of linear equations
 - linear least squares method
 - ridge regression
-- ...
+- platform independent source codes (but nowhere any meta-build recipes, only included Visual Studio 2019 projects)
+- reusable modules (maybe not used...)
   
 # Usage of linear_system
 ## Code

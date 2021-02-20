@@ -1,6 +1,6 @@
 #include "pch.h"
-#include "../least-squares/linear_least_squares.h"
-#include "ridge_regression.h"
+#include "../../libsrc/linear_least_squares.h"
+#include "../../libsrc/ridge_regression.h"
 #include <stdio.h>
 using namespace csv;
 using namespace std;
@@ -12,7 +12,7 @@ int main()
 	linear_least_squares::residual_list bhd;
 	linear_least_squares::parameter_vector pv;
 
-	CSVReader reader("../data/BostonHousing.csv");
+	CSVReader reader("data/BostonHousing.csv");
     for (CSVRow& row: reader)
     {
 		bhd.push_back({});

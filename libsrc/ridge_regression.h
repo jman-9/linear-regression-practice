@@ -1,6 +1,6 @@
 #pragma once
-#include "../linear-system/linear_system.h"
-#include "../least-squares/linear_least_squares.h"
+#include "linear_system.h"
+#include "linear_least_squares.h"
 
 
 class ridge_regression

@@ -1,5 +1,5 @@
 #include "linear_least_squares.h"
-#include "../linear-system/linear_system.h"
+#include "linear_system.h"
 using namespace std;
 
 

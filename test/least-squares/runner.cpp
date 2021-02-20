@@ -1,4 +1,4 @@
-#include "linear_least_squares.h"
+#include "../../libsrc/linear_least_squares.h"
 #include <stdio.h>
 #include <iostream>
 using namespace std;

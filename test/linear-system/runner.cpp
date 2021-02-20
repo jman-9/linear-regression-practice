@@ -1,4 +1,4 @@
-#include "linear_system.h"
+#include "../../libsrc/linear_system.h"
 #include <stdio.h>
 #include <iostream>
 using namespace std;
@@ -56,8 +56,6 @@ int main(int argc, char **argv)
 	printf("solution :\n");
 	printf("x=%.6lf, y=%.6lf z=%.6lf\n", s2[0], s2[1], s2[2]);
 	printf("---------\n");
-
-	system("pause");
 
 	return 0;
 }

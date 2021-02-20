@@ -19,13 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="equation_matrix.cpp" />
-    <ClCompile Include="linear_system.cpp" />
     <ClCompile Include="runner.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="equation_matrix.h" />
-    <ClInclude Include="linear_system.h" />
+    <ProjectReference Include="..\..\libprj\linear-regression-lib.vcxproj">
+      <Project>{2f8846c6-2241-431e-96ff-1555eb93d0dd}</Project>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -33,6 +32,7 @@
     <ProjectGuid>{38df58a9-4d61-446f-8a0c-d9a282874900}</ProjectGuid>
     <RootNamespace>linearsystem</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>linear-system</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
