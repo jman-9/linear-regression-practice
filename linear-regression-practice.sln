@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "linear-regression-lib", "libprj\linear-regression-lib.vcxproj", "{2F8846C6-2241-431E-96FF-1555EB93D0DD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "items", "items", "{739DAC3C-BE0D-4441-9104-CA6C0C439B5B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{739DAC3C-BE0D-4441-9104-CA6C0C439B5B}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		README.md = README.md
