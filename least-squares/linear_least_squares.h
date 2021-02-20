@@ -1,4 +1,5 @@
 #pragma once
+#include "../linear-system/equation_matrix.h"
 #include <vector>
 
 
@@ -20,8 +21,6 @@ public:
 	linear_least_squares();
 	virtual ~linear_least_squares();
 
+	equation_matrix make_linear_system(const residual_list& residuals) const;
 	parameter_vector solve(const residual_list& residuals) const;
-
-protected:
-
 };

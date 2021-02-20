@@ -19,10 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="equation_matrix.cpp" />
     <ClCompile Include="linear_system.cpp" />
     <ClCompile Include="runner.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="equation_matrix.h" />
     <ClInclude Include="linear_system.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

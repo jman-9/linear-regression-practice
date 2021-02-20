@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 	printf("x=%d/%d, y=%d/%d\n", sol.x.num, sol.x.den, sol.y.num, sol.y.den );
 	printf("---------\n");
 
-	linear_system::equation_matrix mat(2, 3);
+	equation_matrix mat(2, 3);
 	mat[0][0] = 2;
 	mat[0][1] = 3;
 	mat[0][2] = 2;

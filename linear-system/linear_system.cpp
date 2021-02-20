@@ -15,20 +15,20 @@ static int calc_lcm(int a, int b){
     return a * b / calc_gcd(a,b);
 }
 
-static void calc_mul(linear_system::equation_vector& eq, double k)
+static void calc_mul(equation_vector& eq, double k)
 {
-	(void)calc_mul;
+	(void)&calc_mul;
 	for(auto& v : eq)
 		v *= k;
 }
 
-static void calc_div(linear_system::equation_vector& eq, double k)
+static void calc_div(equation_vector& eq, double k)
 {
 	for(auto& v : eq)
 		v /= k;
 }
 
-static void calc_subt(linear_system::equation_vector& eq1, const linear_system::equation_vector& eq2)
+static void calc_subt(equation_vector& eq1, const equation_vector& eq2)
 {
 	size_t i;
 	for(i=0; i<eq1.size(); i++)
@@ -36,48 +36,6 @@ static void calc_subt(linear_system::equation_vector& eq1, const linear_system::
 }
 
 
-linear_system::equation_matrix::equation_matrix(int rows /* = 0 */, int cols /* = 0 */)
-{
-	resize(rows, cols);
-}
-
-linear_system::equation_matrix::~equation_matrix()
-{
-}
-
-void linear_system::equation_matrix::resize(int rows, int cols)
-{
-	_matrix.resize(rows);
-	for(auto& r : _matrix)
-	{
-		r.resize(cols);
-	}
-}
-
-void linear_system::equation_matrix::reduce(int reduce_rows, int reduce_cols)
-{
-	resize((int)_matrix.size() - reduce_rows, (int)_matrix[0].size() - reduce_cols);
-}
-
-size_t linear_system::equation_matrix::varcnt() const
-{
-	return _matrix.size();
-}
-
-double& linear_system::equation_matrix::get(int row, int col)
-{
-	return _matrix[row][col];
-}
-
-void linear_system::equation_matrix::set(int row, int col, double v)
-{
-	get(row, col) = v;
-}
-
-vector<double>& linear_system::equation_matrix::operator[](size_t idx)
-{
-	return _matrix[idx];
-}
 
 
 void linear_system::equation::mul(int sk)
@@ -103,7 +61,7 @@ linear_system::~linear_system()
 {
 }
 
-linear_system::equation_vector linear_system::find_equation(equation_vector e1, equation_vector e2) const
+equation_vector linear_system::find_equation(equation_vector e1, equation_vector e2) const
 {
 	if(e1[0] != 0.0) calc_div(e1, e1[0]);
 	if(e2[0] != 0.0) calc_div(e2, e2[0]);
@@ -147,7 +105,7 @@ linear_system::solution_vector linear_system::solve(equation_matrix problem) con
 		equation_matrix finder = problem;
 		for(i=finder.varcnt()-1; i>0; i--)
 		{
-			equation_matrix calc(i, i);
+			equation_matrix calc((int)i, (int)i);
 			for(j=0; j<i; j++)
 			{
 				calc[j] = find_equation(finder[j], finder[j+1]);
