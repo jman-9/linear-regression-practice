@@ -1,7 +1,6 @@
 #include "pch.h"
 #include "../least-squares/linear_least_squares.h"
-#include "../linear-system/equation_matrix.h"
-#include "../linear-system/linear_system.h"
+#include "ridge_regression.h"
 #include <stdio.h>
 using namespace csv;
 using namespace std;
@@ -9,11 +8,9 @@ using namespace std;
 
 int main()
 {
-	linear_system les;
-	linear_least_squares ls;
+	ridge_regression rr;
 	linear_least_squares::residual_list bhd;
 	linear_least_squares::parameter_vector pv;
-	equation_matrix em;
 
 	CSVReader reader("../data/BostonHousing.csv");
     for (CSVRow& row: reader)
@@ -33,7 +30,7 @@ int main()
 	printf("=========\n");
 	printf("solving Boston Housing Dataset\n");
 
-	pv = ls.solve(bhd);
+	pv = rr.solve(bhd, 0.0);
 	printf("---------\n");
 	printf("parameters (not regularized) :\n");
 	printf("%s:%lf", colnames[0].c_str(), pv[0]);
@@ -41,14 +38,7 @@ int main()
 		printf(", %s:%lf", colnames[i].c_str(), pv[i]);
 	printf("\n");
 
-	em = ls.make_linear_system(bhd);
-	//applying L2-norm for regularizing
-	for(size_t i=0; i<em.varcnt() - 1; i++)
-	{
-		em[i][i] += 1.0; // lambda (controller)
-	}
-
-	pv = les.solve(em);
+	pv = rr.solve(bhd, 1.0);
 	printf("---------\n");
 	printf("parameters (regularized) :\n");
 	printf("%s:%lf", colnames[0].c_str(), pv[0]);
