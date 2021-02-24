@@ -11,12 +11,13 @@
 - ~~system of linear equations~~
 - ~~linear least squares method~~
 - ~~regularization~~
-- coss-validation - holdout method  
+- ~~coss-validation - holdout method  
   
 # Achieved
 - system of linear equations
 - linear least squares method
 - ridge regression
+- cross-validation
 - platform independent source codes (but nowhere any meta-build recipes, only included Visual Studio 2019 projects)
 - reusable modules (maybe not used...)
   
