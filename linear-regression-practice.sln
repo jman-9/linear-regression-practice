@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "least-squares", "test\least
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2B30AC58-8223-4EDD-B816-BBB42D2EABB7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "validation-gui", "test\validation-gui\validation-gui.vcxproj", "{6F5B5615-A93C-4D52-ABC0-A4BEAA7CAAE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -59,6 +61,14 @@ Global
 		{64BBD487-E971-46FD-80CC-F4E8345F4AD6}.Release|x64.Build.0 = Release|x64
 		{64BBD487-E971-46FD-80CC-F4E8345F4AD6}.Release|x86.ActiveCfg = Release|Win32
 		{64BBD487-E971-46FD-80CC-F4E8345F4AD6}.Release|x86.Build.0 = Release|Win32
+		{6F5B5615-A93C-4D52-ABC0-A4BEAA7CAAE0}.Debug|x64.ActiveCfg = Debug|x64
+		{6F5B5615-A93C-4D52-ABC0-A4BEAA7CAAE0}.Debug|x64.Build.0 = Debug|x64
+		{6F5B5615-A93C-4D52-ABC0-A4BEAA7CAAE0}.Debug|x86.ActiveCfg = Debug|Win32
+		{6F5B5615-A93C-4D52-ABC0-A4BEAA7CAAE0}.Debug|x86.Build.0 = Debug|Win32
+		{6F5B5615-A93C-4D52-ABC0-A4BEAA7CAAE0}.Release|x64.ActiveCfg = Release|x64
+		{6F5B5615-A93C-4D52-ABC0-A4BEAA7CAAE0}.Release|x64.Build.0 = Release|x64
+		{6F5B5615-A93C-4D52-ABC0-A4BEAA7CAAE0}.Release|x86.ActiveCfg = Release|Win32
+		{6F5B5615-A93C-4D52-ABC0-A4BEAA7CAAE0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +77,7 @@ Global
 		{9F9A4882-A51A-4925-BB0F-C591459A3757} = {2B30AC58-8223-4EDD-B816-BBB42D2EABB7}
 		{38DF58A9-4D61-446F-8A0C-D9A282874900} = {2B30AC58-8223-4EDD-B816-BBB42D2EABB7}
 		{64BBD487-E971-46FD-80CC-F4E8345F4AD6} = {2B30AC58-8223-4EDD-B816-BBB42D2EABB7}
+		{6F5B5615-A93C-4D52-ABC0-A4BEAA7CAAE0} = {2B30AC58-8223-4EDD-B816-BBB42D2EABB7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E637F06C-B081-49AD-9CD8-D9EA55AD1B6B}
