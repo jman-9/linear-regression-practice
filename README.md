@@ -11,6 +11,7 @@
 - ~~system of linear equations~~
 - ~~linear least squares method~~
 - ~~regularization~~
+- coss-validation - holdout method  
   
 # Achieved
 - system of linear equations
